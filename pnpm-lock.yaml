@@ -9,8 +9,8 @@ dependencies:
     specifier: ^2.0.2
     version: 2.0.2
   '@actions/github':
-    specifier: ^8.0.0
-    version: 8.0.0
+    specifier: ^9.0.0
+    version: 9.0.0
 
 devDependencies:
   '@types/jest':
@@ -88,16 +88,16 @@ packages:
       '@actions/io': 2.0.0
     dev: false
 
-  /@actions/github@8.0.0:
-    resolution: {integrity: sha512-bBukvVRvIf7NshWEXFVnBaXs/ZyGzDvx+jbB5AdJij9CUG4VFEYJJD6T6y06dDkuULalQQUNvKXIH71yqw7SoQ==}
+  /@actions/github@9.0.0:
+    resolution: {integrity: sha512-yJ0RoswsAaKcvkmpCE4XxBRiy/whH2SdTBHWzs0gi4wkqTDhXMChjSdqBz/F4AeiDlP28rQqL33iHb+kjAMX6w==}
     dependencies:
-      '@actions/http-client': 3.0.1
+      '@actions/http-client': 3.0.2
       '@octokit/core': 7.0.6
       '@octokit/plugin-paginate-rest': 14.0.0(@octokit/core@7.0.6)
       '@octokit/plugin-rest-endpoint-methods': 17.0.0(@octokit/core@7.0.6)
       '@octokit/request': 10.0.7
       '@octokit/request-error': 7.1.0
-      undici: 5.29.0
+      undici: 6.23.0
     dev: false
 
   /@actions/http-client@3.0.1:
@@ -105,6 +105,13 @@ packages:
     dependencies:
       tunnel: 0.0.6
       undici: 5.29.0
+    dev: false
+
+  /@actions/http-client@3.0.2:
+    resolution: {integrity: sha512-JP38FYYpyqvUsz+Igqlc/JG6YO9PaKuvqjM3iGvaLqFnJ7TFmcLyy2IDrY0bI0qCQug8E9K+elv5ZNfw62ZJzA==}
+    dependencies:
+      tunnel: 0.0.6
+      undici: 6.23.0
     dev: false
 
   /@actions/io@2.0.0:
@@ -5341,6 +5348,11 @@ packages:
     engines: {node: '>=14.0'}
     dependencies:
       '@fastify/busboy': 2.1.1
+    dev: false
+
+  /undici@6.23.0:
+    resolution: {integrity: sha512-VfQPToRA5FZs/qJxLIinmU59u0r7LXqoJkCzinq3ckNJp3vKEh7jTWN589YQ5+aoAC/TGRLyJLCPKcLQbM8r9g==}
+    engines: {node: '>=18.17'}
     dev: false
 
   /universal-user-agent@7.0.3:
